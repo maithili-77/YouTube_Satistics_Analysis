@@ -1,4 +1,5 @@
 # YouTube_Satistics_Analysis
+
 **Project Overview**
 YouTube Video Statistics Analysis is a Big Data Analytics project
 that explores YouTube trending-video statistics. It uses Apache Spark
@@ -8,6 +9,7 @@ dashboard.
 
 The project helps users explore video popularity, channel performance,
 category-level statistics, and audience engagement.
+
 **Objectives**
 - Analyze video views, likes, dislikes, and comments.
 - Identify the most-viewed, most-liked, and most-commented videos.
@@ -16,6 +18,7 @@ category-level statistics, and audience engagement.
 - Calculate an engagement-rate measure.
 - Present analysis results through charts, tables, and an interactive
   dashboard.
+  
 **Technologies Used**
 - Python --- main programming language
 - Google Colab / Jupyter Notebook --- development environment
@@ -23,6 +26,7 @@ category-level statistics, and audience engagement.
 - Pandas --- preparing smaller result tables for display
 - Matplotlib / Plotly --- data visualization
 - Gradio --- interactive user interface
+  
 **Dataset**
 The project uses a YouTube Trending Video Statistics CSV dataset,
 referenced in the notebook as INvideos.csv.
@@ -75,6 +79,7 @@ The notebook's interactive interface includes analysis options such as:
 - Views vs. Comments
 Users can select an analysis, choose how many results to display, and
 click Analyze to view the resulting table and chart.
+
 **Running the Project in Google Colab**
 1. Open the Pyspark_project.ipynb notebook in Google Colab.
 2. Upload the required CSV dataset (for example, INvideos.csv) to the
@@ -97,6 +102,7 @@ If a video has 10,000 views, 800 likes, and 200 comments:
 
 This is a project-defined engagement measure based on likes and comments
 relative to views. It is not an official YouTube metric.
+
 **Project Structure**
 A simple suggested structure is:
 YouTube-Video-Statistics-Analysis/
@@ -104,6 +110,7 @@ YouTube-Video-Statistics-Analysis/
 ├── INvideos.csv                 # Dataset; provide separately if not included
 └── README.md
 Your actual filenames and folders may differ.
+
 **Limitations**
 - Results depend on the dataset version and the cleaning steps
   applied.
@@ -115,6 +122,7 @@ Your actual filenames and folders may differ.
   predictive model is added.
 - The engagement rate can be undefined when views are zero, so those
   records should be handled appropriately.
+  
 **Future Scope**
 - Add filters for date, channel, and category.
 - Connect to the YouTube Data API for updated statistics, subject to
@@ -122,9 +130,11 @@ Your actual filenames and folders may differ.
 - Add and evaluate predictive models for future views or engagement.
 - Improve the dashboard with more KPIs, filters, and visualizations.
 - Add an option to download analysis results.
+  
 **Authors**
 - Arpita Hanwatkar
 - Maithili Mahajan
+  
 **Conclusion**
 This project demonstrates how PySpark can be used to process and analyze
 YouTube video statistics. Data cleaning, aggregation, and visualization
